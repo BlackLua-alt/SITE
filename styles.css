@@ -1,0 +1,75 @@
+/* Общие стили */
+body {
+    font-family: 'Fira Code', monospace;
+    background-color: #1e1e1e;
+    color: #d4d4d4;
+    margin: 0;
+    padding: 0;
+}
+
+/* Стили для контейнера кода */
+.code-block {
+    font-size: 14px;
+    line-height: 1.6;
+}
+
+/* Стили для каждой строки */
+.code-block > div {
+    padding-left: 20px;
+    position: relative;
+}
+
+/* Стили для цифр */
+/* Стили для цифр */
+/* Стили для цифр */
+/* Стили для цифр */
+.line-index {
+    display: inline-block;
+    width: 3ch; /* Ширина блока для цифры */
+    text-align: right;
+    margin-right: 0.5ch; /* Отступ между цифрой и текстом */
+    color: #707070; /* Цвет цифры */
+    font-family: 'Fira Code', monospace; /* Шрифт цифры */
+    font-weight: bold; /* Жирный шрифт */
+    font-size: 100%; /* Размер шрифта по умолчанию */
+}
+
+/* Увеличение размера шрифта для цифр, когда значение больше 99 */
+.line-index.big {
+    font-size: 150%; /* Размер шрифта для больших чисел */
+}
+
+
+
+
+/* Стили для текста в строке */
+.code-block > div > div {
+    display: inline;
+    vertical-align: top; /* Выравнивание текста по верхнему краю */
+}
+
+/* Стили для комментариев */
+.comment {
+    color: #6a9955;
+}
+
+/* Стили для классов языков программирования */
+.yellow {
+    color: #dcdcaa;
+}
+
+.blue {
+    color: #4fc1ff;
+}
+
+.green {
+    color: #98c379;
+}
+
+.frida {
+    color: #c678dd;
+}
+
+.discord {
+    color: #7289da;
+}

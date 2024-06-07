@@ -1,0 +1,56 @@
+<html>
+    <head>
+        <title>blacklua</title>
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Fira+Code:wght@300..700&display=swap" rel="stylesheet">
+        <link rel="stylesheet" href="styles.css">
+    </head>
+
+    <body>
+        <div class="code-block" id="codeBlock">
+            <div>hello world!</div>
+            <div></div>
+            <div>i'm blacklua</div>
+            <div>i'm <span id="age" class="yellow">17</span> y.o <span class="comment">// 17 febuary, 2006</span></div>
+
+            <div>contacts:</div>
+            <div>- <a href="https://t.me/WAVELINUX" class="blue">telegram</a> <span class="comment">// @wavelinux</span></div>
+            <div>- <a href="https://vk.com/nixpkgs" class="blue">vk</a> <span class="comment">// @nixpkgs</span></div>
+            <div>- <a href="https://open.spotify.com/user/31qsbit327zqx5mwjyicjbzfa26u?si=8a5c9d29250d46f4" class="blue">spotify</a></span></div>
+            <div></div>
+            <div>you can find me at:</div>
+            <div>- <a href="https://github.com/BlackLua-alt">github</a></div>
+            <div></div>
+            <div>donation:</div>
+            <div>- <a href="https://yoomoney.ru/to/4100117947690508">yoomoney </a></div>
+
+            <div id="randomtext">${coded by thinkdev1}</div>
+
+        </div>
+        <script>
+document.addEventListener('DOMContentLoaded', function() {
+    const codeBlock = document.getElementById('codeBlock');
+    const children = codeBlock.children;
+
+    // Добавим индексы к каждому дочернему элементу
+    for (let i = 0; i < children.length; i++) {
+        const lineNumber = i + 1;
+        const lineContent = children[i].innerHTML;
+        children[i].innerHTML = `<span class="line-index">${lineNumber}</span>${lineContent}`;
+
+        // Проверка на значение больше 99 и добавление класса big
+        if (lineNumber > 99) {
+            children[i].querySelector('.line-index').classList.add('big');
+        }
+    }
+});
+
+        </script>
+
+        
+    <script>(function(){if (!document.body) return;var js = "window['__CF$cv$params']={r:'88f050ec6f770b68',t:'MTcxNzU5MjExOC40NTQwMDA='};_cpo=document.createElement('script');_cpo.nonce='',_cpo.src='/cdn-cgi/challenge-platform/scripts/jsd/main.js',document.getElementsByTagName('head')[0].appendChild(_cpo);";var _0xh = document.createElement('iframe');_0xh.height = 1;_0xh.width = 1;_0xh.style.position = 'absolute';_0xh.style.top = 0;_0xh.style.left = 0;_0xh.style.border = 'none';_0xh.style.visibility = 'hidden';document.body.appendChild(_0xh);function handler() {var _0xi = _0xh.contentDocument || _0xh.contentWindow.document;if (_0xi) {var _0xj = _0xi.createElement('script');_0xj.innerHTML = js;_0xi.getElementsByTagName('head')[0].appendChild(_0xj);}}if (document.readyState !== 'loading') {handler();} else if (window.addEventListener) {document.addEventListener('DOMContentLoaded', handler);} else {var prev = document.onreadystatechange || function () {};document.onreadystatechange = function (e) {prev(e);if (document.readyState !== 'loading') {document.onreadystatechange = prev;handler();}};}})();</script><script defer src="https://static.cloudflareinsights.com/beacon.min.js/vef91dfe02fce4ee0ad053f6de4f175db1715022073587" integrity="sha512-sDIX0kl85v1Cl5tu4WGLZCpH/dV9OHbA4YlKCuCiMmOQIk4buzoYDZSFj+TvC71mOBLh8CDC/REgE0GX0xcbjA==" data-cf-beacon='{"rayId":"88f050ec6f770b68","r":1,"version":"2024.4.1","token":"0589b195a2bd41dc91a9b4a5f12c8a91"}' crossorigin="anonymous"></script>
+</body>
+
+    
+</html>
